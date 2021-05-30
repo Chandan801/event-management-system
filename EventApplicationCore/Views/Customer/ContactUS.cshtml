@@ -1,0 +1,56 @@
+﻿@model EventApplicationCore.Model.ContactUsModel
+
+@{ Layout = "~/Views/Shared/_LayoutCustomer.cshtml"; }
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">Contact Us</div>
+        <div class="panel-body">
+            @Html.AntiForgeryToken()
+            @if (TempData["MessageUpdate"] != null)
+            {
+        <p class="alert alert-success" id="successMessage">@TempData["MessageUpdate"]</p>           
+            }
+            @Html.ValidationSummary(true)
+            <form method="post" asp-controller="Customer" asp-action="ContactUs">
+
+                <div class="form-group">
+                    <label asp-for="Name">Name</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name"
+                          class="text-muted"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EmailId">Email</label>
+                    <input asp-for="EmailId" class="form-control" />
+                    <span asp-validation-for="EmailId"
+                          class="text-muted"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Subject">Subject</label>
+                    <input asp-for="Subject" class="form-control" />
+                    <span asp-validation-for="Subject"
+                          class="text-muted"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Message">Message</label>
+                    <textarea rows="5" cols="15"
+                              asp-for="Message" class="form-control"></textarea>
+                    <span asp-validation-for="Message"
+                          class="text-muted"></span>
+                </div>
+                <div>
+                    <button type="submit"
+                            class="btn btn-success">
+                        Send Message
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+
+</div>
+

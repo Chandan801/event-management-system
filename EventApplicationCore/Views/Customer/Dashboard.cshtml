@@ -1,19 +1,46 @@
-﻿@{ Layout = "~/Views/Shared/_LayoutCustomer.cshtml"; 
-    }
+﻿@{ Layout = "~/Views/Shared/_LayoutCustomer.cshtml"; }
 
-<div class="carousel-container">
-    <i class="fas fa-arrow-left" id="prevBtn"></i>
-    <i class="fas fa-arrow-right" id="nextBtn"></i>
+<div class="slideshow-container">
 
-    <div class="carousel-slide">
-        <img src="~/home image/image005.jpg" id="lastClone" alt="" />
-        <img src="~/home image/image001.jpg" alt="" />
-        <img src="~/home image/image002.jpg" alt="" />
-        <img src="~/home image/image003.jpg" alt="" />
-        <img src="~/home image/image004.jpg" alt="" />
-        <img src="~/home image/image005.jpg" alt="" />
-        <img src="~/home image/image001.jpg" id="firstClone" alt="" />
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="~/home image/image001.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
     </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="~/home image/image002.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="~/home image/image003.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 3</div>
+        <img src="~/home image/image004.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 3</div>
+        <img src="~/home image/image005.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 </div>
+<br>
 
-
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+</div>

@@ -1,79 +1,37 @@
-﻿const slider = document.querySelector(".slider");
-const nextBtn = document.querySelector(".next-btn");
-const prevBtn = document.querySelector(".prev-btn");
-const slides = document.querySelectorAll(".slide");
-const slideIcons = document.querySelectorAll(".slide-icon");
-const numberOfSlides = slides.length;
-var slideNumber = 0;
+﻿const carouselSlide = document.querySelector('.carousel-slide');
+const carouselImage = document.querySelector('.carousel-slide img');
 
-//image slider next button
-nextBtn.addEventListener("click", () => {
-    slides.forEach((slide) => {
-        slide.classList.remove("active");
-    });
-    slideIcons.forEach((slideIcon) => {
-        slideIcon.classList.remove("active");
-    });
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
 
-    slideNumber++;
+let counter = 1;
+const size = carouselImage[0].clientWidth;
 
-    if (slideNumber > (numberOfSlides - 1)) {
-        slideNumber = 0;
+carouselSlide.stylr.transform = 'tanslateX(' + (-size * counter) + 'px)';
+
+nextBtn.addEventListener('click', () => {
+    if (counter >= carouselImage.length-1) return;
+    carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+    counter++;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+prevBtn.addEventListener('click', () => {
+    if (counter <= 0) return;
+    carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+    counter--;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+carouselSlide.addEventListener('transitionend', () => {
+    if (carouselImage[counter].id === 'lastClone') {
+        carouselSlide.style.transform = 'none';
+        counter = carouselImage.length - 2;
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
-
-    slides[slideNumber].classList.add("active");
-    slideIcons[slideNumber].classList.add("active");
-});
-
-//image slider previous button
-prevBtn.addEventListener("click", () => {
-    slides.forEach((slide) => {
-        slide.classList.remove("active");
-    });
-    slideIcons.forEach((slideIcon) => {
-        slideIcon.classList.remove("active");
-    });
-
-    slideNumber--;
-
-    if (slideNumber < 0) {
-        slideNumber = numberOfSlides - 1;
+    if (carouselImage[counter].id === 'firstClone') {
+        carouselSlide.style.transform = 'none';
+        counter = carouselImage.length - counter;
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
-
-    slides[slideNumber].classList.add("active");
-    slideIcons[slideNumber].classList.add("active");
-});
-
-//image slider autoplay
-var playSlider;
-
-var repeater = () => {
-    playSlider = setInterval(function () {
-        slides.forEach((slide) => {
-            slide.classList.remove("active");
-        });
-        slideIcons.forEach((slideIcon) => {
-            slideIcon.classList.remove("active");
-        });
-
-        slideNumber++;
-
-        if (slideNumber > (numberOfSlides - 1)) {
-            slideNumber = 0;
-        }
-
-        slides[slideNumber].classList.add("active");
-        slideIcons[slideNumber].classList.add("active");
-    }, 4000);
-}
-repeater();
-
-//stop the image slider autoplay on mouseover
-slider.addEventListener("mouseover", () => {
-    clearInterval(playSlider);
-});
-
-//start the image slider autoplay again on mouseout
-slider.addEventListener("mouseout", () => {
-    repeater();
 });

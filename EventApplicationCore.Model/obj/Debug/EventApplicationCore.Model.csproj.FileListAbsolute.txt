@@ -1,0 +1,6 @@
+C:\Users\gulshan\Source\Repos\event-management-system\EventApplicationCore.Model\bin\Debug\EventApplicationCore.Model.dll
+C:\Users\gulshan\Source\Repos\event-management-system\EventApplicationCore.Model\bin\Debug\EventApplicationCore.Model.pdb
+C:\Users\gulshan\Source\Repos\event-management-system\EventApplicationCore.Model\obj\Debug\EventApplicationCore.Model.csprojAssemblyReference.cache
+C:\Users\gulshan\Source\Repos\event-management-system\EventApplicationCore.Model\obj\Debug\EventApplicationCore.Model.csproj.CoreCompileInputs.cache
+C:\Users\gulshan\Source\Repos\event-management-system\EventApplicationCore.Model\obj\Debug\EventApplicationCore.Model.dll
+C:\Users\gulshan\Source\Repos\event-management-system\EventApplicationCore.Model\obj\Debug\EventApplicationCore.Model.pdb

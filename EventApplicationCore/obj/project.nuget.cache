@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zs7gpLCNddMAUfKsyBROrYn1YhnI84XorVgG6dDwUfzRqbsB6Yfb+tzJSX0PjybhDSuAlqXU32sW9n7BTIovsA==",
+  "dgSpecHash": "AOoITAmebWPP3CCxQdfpVlQmgSHZDF2dfAhg54rPxLJ2JSto6drwh2y4j/aLEdXHrNghJNu0Bsmyzypi4nao9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gulshan\\Source\\Repos\\event-management-system\\EventApplicationCore\\EventApplicationCore.csproj",
+  "projectFilePath": "C:\\Users\\gulshan\\source\\repos\\event-management-system\\EventApplicationCore\\EventApplicationCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gulshan\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\gulshan\\.nuget\\packages\\microsoft.applicationinsights\\2.2.0\\microsoft.applicationinsights.2.2.0.nupkg.sha512",

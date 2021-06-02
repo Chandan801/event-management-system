@@ -9663,11 +9663,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gulshan\\Source\\Repos\\event-management-system\\EventApplicationCore\\EventApplicationCore.csproj",
+      "projectUniqueName": "C:\\Users\\gulshan\\source\\repos\\event-management-system\\EventApplicationCore\\EventApplicationCore.csproj",
       "projectName": "EventApplicationCore",
-      "projectPath": "C:\\Users\\gulshan\\Source\\Repos\\event-management-system\\EventApplicationCore\\EventApplicationCore.csproj",
+      "projectPath": "C:\\Users\\gulshan\\source\\repos\\event-management-system\\EventApplicationCore\\EventApplicationCore.csproj",
       "packagesPath": "C:\\Users\\gulshan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gulshan\\Source\\Repos\\event-management-system\\EventApplicationCore\\obj\\",
+      "outputPath": "C:\\Users\\gulshan\\source\\repos\\event-management-system\\EventApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9688,14 +9688,14 @@
         "net461": {
           "targetAlias": "net461",
           "projectReferences": {
-            "C:\\Users\\gulshan\\Source\\Repos\\event-management-system\\EventApplicationCore.Concrete\\EventApplicationCore.Concrete.csproj": {
-              "projectPath": "C:\\Users\\gulshan\\Source\\Repos\\event-management-system\\EventApplicationCore.Concrete\\EventApplicationCore.Concrete.csproj"
+            "C:\\Users\\gulshan\\source\\repos\\event-management-system\\EventApplicationCore.Concrete\\EventApplicationCore.Concrete.csproj": {
+              "projectPath": "C:\\Users\\gulshan\\source\\repos\\event-management-system\\EventApplicationCore.Concrete\\EventApplicationCore.Concrete.csproj"
             },
-            "C:\\Users\\gulshan\\Source\\Repos\\event-management-system\\EventApplicationCore.Interface\\EventApplicationCore.Interface.csproj": {
-              "projectPath": "C:\\Users\\gulshan\\Source\\Repos\\event-management-system\\EventApplicationCore.Interface\\EventApplicationCore.Interface.csproj"
+            "C:\\Users\\gulshan\\source\\repos\\event-management-system\\EventApplicationCore.Interface\\EventApplicationCore.Interface.csproj": {
+              "projectPath": "C:\\Users\\gulshan\\source\\repos\\event-management-system\\EventApplicationCore.Interface\\EventApplicationCore.Interface.csproj"
             },
-            "C:\\Users\\gulshan\\Source\\Repos\\event-management-system\\EventApplicationCore.Model\\EventApplicationCore.Model.csproj": {
-              "projectPath": "C:\\Users\\gulshan\\Source\\Repos\\event-management-system\\EventApplicationCore.Model\\EventApplicationCore.Model.csproj"
+            "C:\\Users\\gulshan\\source\\repos\\event-management-system\\EventApplicationCore.Model\\EventApplicationCore.Model.csproj": {
+              "projectPath": "C:\\Users\\gulshan\\source\\repos\\event-management-system\\EventApplicationCore.Model\\EventApplicationCore.Model.csproj"
             }
           }
         }
